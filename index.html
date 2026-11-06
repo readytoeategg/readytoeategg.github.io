@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>宜卵即食｜宜蘭平飼雞蛋</title>
     <meta name="description" content="宜蘭在地專職提供 '新鮮平面飼養雞蛋' 的畜牧場，我們致力於使用專業科學並且負責任的飼養方式，善待經濟動物，提供消費者具有環境價值雞蛋的選擇。">
-    <meta name="keywords" content="宜卵即食, 宜蘭平飼雞蛋, 宜蘭農場, 平飼蛋雞, 友善雞蛋">
+    <meta name="keywords" content="宜卵即食, 宜蘭平飼雞蛋, 宜蘭農場">
     <link rel="canonical" href="https://readytoeategg.github.io/">
     
-    <!-- Google Search Console 驗證標記 (切勿刪除) -->
+    <!-- Google Search Console 驗證標記 -->
     <meta name="google-site-verification" content="DUdkqpHTXZ4UJR0XXtMb6G79J8PK7Trd1iCUDpweRvc" />
     
     <!-- Open Graph 分享標籤 -->
     <meta property="og:title" content="宜卵即食｜宜蘭平飼雞蛋">
     <meta property="og:description" content="宜蘭在地專職提供 '新鮮平面飼養雞蛋' 的畜牧場，我們致力於使用專業科學並且負責任的飼養方式，善待經濟動物。">
-    <meta property="og:image" content="work1.jpg">
+    <meta property="og:image" content="hero.jpg">
     <meta property="og:url" content="https://readytoeategg.github.io/">
     <meta property="og:type" content="website">
     
-    <!-- Favicon SVG -->
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥚</text></svg>">
     
     <!-- Google Fonts 圓體與整體字型 -->
@@ -34,7 +34,7 @@
       "@type": "Person",
       "name": "陳映朱",
       "alternateName": "宜卵即食",
-      "jobTitle": "宜蘭的平飼雞蛋",
+      "jobTitle": "養蛋雞的女孩",
       "url": "https://readytoeategg.github.io/",
       "sameAs": [
         "https://www.instagram.com/readytoeat_egg/",
@@ -48,7 +48,7 @@
         :root {
             --primary: #2d6a4f; /* 自然田園青綠色 */
             --primary-light: #e8f5e9;
-            --secondary: #ffb703; /* 蛋黃鵝黃亮色 */
+            --secondary: #ffb703; /* 鵝黃與蛋黃亮色 */
             --accent: #fdf2e9;
             --bg-paper: #fcfbf7;
             --text-dark: #333d29;
@@ -113,6 +113,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--secondary);
+            background-color: #fefae0;
         }
 
         nav ul {
@@ -143,55 +144,56 @@
 
         /* 版型 D: 大字滿版開場 (Full Hero) */
         .hero-fullscreen {
-            min-height: 100vh;
+            min-height: 85vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 120px 20px 60px;
-            background: linear-gradient(135deg, rgba(232, 245, 233, 0.85) 0%, rgba(254, 250, 224, 0.75) 100%), url('hero.jpg') no-repeat center center/cover;
+            padding: 90px 20px 40px;
+            background: linear-gradient(135deg, rgba(45, 106, 79, 0.75) 0%, rgba(30, 70, 52, 0.85) 100%), url('hero.jpg') no-repeat center center/cover;
             position: relative;
         }
 
         .badge-status {
             background-color: var(--secondary);
             color: white;
-            padding: 8px 24px;
+            padding: 6px 20px;
             border-radius: 30px;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
             font-weight: bold;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(255, 183, 3, 0.35);
+            margin-bottom: 18px;
+            box-shadow: 0 4px 12px rgba(255, 183, 3, 0.4);
             display: inline-block;
         }
 
         .hero-fullscreen h1 {
-            font-size: clamp(2.8rem, 7vw, 4.8rem);
-            color: var(--primary);
-            margin-bottom: 20px;
-            line-height: 1.15;
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            color: #ffffff;
+            margin-bottom: 15px;
+            line-height: 1.2;
             font-weight: 900;
             letter-spacing: -1px;
-            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.6);
+            text-shadow: 0 3px 12px rgba(0,0,0,0.3);
         }
 
         .typing-container {
-            font-size: clamp(1.3rem, 3.2vw, 2.2rem);
-            color: var(--text-light);
-            margin-bottom: 30px;
-            min-height: 50px;
+            font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+            color: #fffae6;
+            margin-bottom: 20px;
+            min-height: 38px;
             font-weight: 800;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
 
         .typing-cursor {
             display: inline-block;
             width: 3px;
             height: 1.2em;
-            background-color: var(--primary);
+            background-color: white;
             margin-left: 5px;
             animation: blink 0.8s infinite;
         }
@@ -202,33 +204,33 @@
         }
 
         .hero-fullscreen p {
-            max-width: 720px;
-            font-size: 1.15rem;
-            margin-bottom: 40px;
+            max-width: 650px;
+            font-size: 1.05rem;
+            margin-bottom: 30px;
             color: var(--text-dark);
-            background: rgba(255, 255, 255, 0.92);
-            padding: 22px 28px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 16px 22px;
             border-radius: var(--border-radius);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
             backdrop-filter: blur(5px);
-            line-height: 1.9;
+            line-height: 1.7;
         }
 
         .hero-btns {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
         }
 
         .btn {
             display: inline-block;
-            padding: 14px 34px;
+            padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
 
         .btn-primary {
@@ -272,14 +274,6 @@
             font-weight: 800;
         }
 
-        .section-title h2::after {
-            content: '🥚';
-            position: absolute;
-            right: -45px;
-            top: 0;
-            font-size: 1.8rem;
-        }
-
         /* 關於我 */
         .about-grid {
             display: grid;
@@ -290,6 +284,7 @@
 
         .about-content {
             font-size: 1.1rem;
+            line-height: 1.9;
         }
 
         .about-content p {
@@ -308,16 +303,14 @@
 
         .fun-fact {
             background-color: #fefae0;
-            padding: 18px 25px;
+            padding: 20px 25px;
             border-radius: var(--border-radius);
             border: 2px dashed var(--secondary);
-            display: flex;
-            align-items: center;
-            gap: 15px;
             margin-top: 30px;
         }
 
         .about-image {
+            position: relative;
             border-radius: var(--border-radius);
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
@@ -325,9 +318,10 @@
 
         .about-image img {
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            max-height: 360px;
             object-fit: cover;
+            display: block;
             transition: transform 0.5s ease;
         }
 
@@ -373,47 +367,32 @@
             font-weight: 700;
         }
 
-        /* 服務項目卡片 (鮮蛋禮盒) */
+        /* 服務項目卡片 (鮮蛋禮盒) - 三個商品排列在同一行 */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
         }
 
         .service-card {
             background: white;
             border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            padding: 35px 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
             transition: all 0.3s ease;
-            border: 1px solid rgba(0,0,0,0.05);
+            border: 2px solid rgba(45, 106, 79, 0.08);
             display: flex;
             flex-direction: column;
+            position: relative;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-8px);
             box-shadow: 0 15px 35px rgba(45, 106, 79, 0.12);
-        }
-
-        .service-img {
-            height: 240px;
-            overflow: hidden;
-        }
-
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .service-card:hover .service-img img {
-            transform: scale(1.08);
+            border-color: var(--primary);
         }
 
         .service-info {
-            padding: 30px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -423,31 +402,32 @@
             align-self: flex-start;
             background-color: var(--primary-light);
             color: var(--primary);
-            padding: 4px 15px;
+            padding: 5px 16px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .service-title {
             font-size: 1.5rem;
             color: var(--primary);
-            margin-bottom: 12px;
-            font-weight: bold;
+            margin-bottom: 15px;
+            font-weight: 800;
         }
 
         .service-desc {
             font-size: 1rem;
             color: var(--text-dark);
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             flex-grow: 1;
+            line-height: 1.75;
         }
 
         .service-footer {
             display: flex;
             justify-content: flex-end;
-            border-top: 1px solid rgba(0,0,0,0.05);
+            border-top: 1px dashed rgba(45, 106, 79, 0.15);
             padding-top: 20px;
         }
 
@@ -606,6 +586,19 @@
         }
 
         /* RWD 響應式切換 */
+        @media (max-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+            }
+            .service-card {
+                padding: 25px 18px;
+            }
+            .service-title {
+                font-size: 1.3rem;
+            }
+        }
+
         @media (max-width: 900px) {
             .about-grid {
                 grid-template-columns: 1fr;
@@ -617,6 +610,11 @@
         }
 
         @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            
             nav ul {
                 display: none;
                 position: absolute;
@@ -658,7 +656,7 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
-                <img src="photo.jpg" alt="宜卵即食 LOGO" onerror="this.onerror=null;this.src='https://picsum.photos/seed/logo/100/100'">
+                <img src="photo.jpg" alt="宜卵即食 LOGO" onerror="this.onerror=null;this.src='photo.jpg'">
                 宜卵即食
             </a>
             <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -675,8 +673,8 @@
     </header>
 
     <!-- 開場 Hero (版型 D: 大字滿版) -->
-    <section class="hero-fullscreen">
-        <span class="badge-status">宜蘭的平飼雞蛋</span>
+    <section class="hero-fullscreen" style="background-image: linear-gradient(135deg, rgba(45, 106, 79, 0.75) 0%, rgba(30, 70, 52, 0.85) 100%), url('hero.jpg'), url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1600&auto=format&fit=crop&q=80'); background-size: cover; background-position: center;">
+        <span class="badge-status">宜蘭平飼雞蛋</span>
         <h1>生的安心，吃的放心</h1>
         <div class="typing-container">
             <span id="typing-text"></span><span class="typing-cursor"></span>
@@ -701,20 +699,19 @@
                 </div>
                 <p>因為這份對品質的堅持，我們幾乎是全年無休、全心全意地守護與陪伴著這群快樂的母雞。只要能讓大家吃得安心、吃得健康，這就是我們最幸福的事。</p>
                 <div class="fun-fact">
-                    <span style="font-size: 1.4rem;">💡</span>
-                    <div>
-                        <strong>你知道嗎？</strong>
-                        <p style="margin:0; font-size:0.95rem;">蛋雞其實一天只會生一顆蛋喔！</p>
-                    </div>
+                <div>
+                    <strong>你知道嗎？</strong>
+                    <p style="margin:5px 0 0; font-size:1rem;">蛋雞其實一天只會生一顆蛋喔！</p>
                 </div>
             </div>
-            <div class="about-image">
-                <img src="hero.jpg" alt="母雞與新鮮雞蛋實照" onerror="this.onerror=null;this.src='https://picsum.photos/seed/chickenyard/600/400'" loading="lazy">
-            </div>
         </div>
-    </section>
+        <div class="about-image">
+            <img src="hero.jpg" alt="平飼蛋雞農場產蛋箱實照" onerror="this.onerror=null;this.src='hero.jpg'" loading="lazy">
+        </div>
+    </div>
+</section>
 
-    <!-- 亮點數字 -->
+<!-- 亮點數字 -->
     <section id="stats" style="padding-top:20px; padding-bottom:50px;">
         <div class="stats-bg">
             <div class="section-title">
@@ -741,43 +738,34 @@
         <div class="services-grid">
             <!-- 服務 1 -->
             <div class="service-card">
-                <div class="service-img">
-                    <img src="work1.jpg" alt="30顆雞蛋禮盒" onerror="this.onerror=null;this.src='https://picsum.photos/seed/egg30/400/300'" loading="lazy">
-                </div>
                 <div class="service-info">
                     <span class="service-tag">2人小家庭首選</span>
                     <h3 class="service-title">30 顆雞蛋禮盒</h3>
-                    <p class="service-desc">30顆裝新鮮平飼雞蛋禮盒，適合小家庭一兩週的日常食用，餐餐鮮美無負擔。</p>
+                    <p class="service-desc">30顆裝雞蛋禮盒，適合小家庭一兩週的日常食用，餐餐鮮美無負擔。</p>
                     <div class="service-footer">
-                        <a href="https://lin.ee/UFeY5Xq" class="btn btn-secondary btn-sm" style="padding:8px 20px; font-size:0.95rem;" target="_blank" rel="noopener">立即預訂</a>
+                        <a href="https://lin.ee/UFeY5Xq" class="btn btn-secondary btn-sm" style="padding:10px 24px; font-size:0.95rem;" target="_blank" rel="noopener">線上預訂</a>
                     </div>
                 </div>
             </div>
             <!-- 服務 2 -->
             <div class="service-card">
-                <div class="service-img">
-                    <img src="work2.jpg" alt="60顆雞蛋禮盒" onerror="this.onerror=null;this.src='https://picsum.photos/seed/egg60/400/300'" loading="lazy">
-                </div>
                 <div class="service-info">
                     <span class="service-tag">4人以上家庭推薦</span>
                     <h3 class="service-title">60 顆雞蛋禮盒</h3>
-                    <p class="service-desc">60顆裝雞蛋禮盒，內含 6 盒 10 顆獨立小包裝。便於分享與保鮮，滿足中大家庭的多彩料理需求。</p>
+                    <p class="service-desc">60顆裝雞蛋，10 顆獨立包裝有6盒。便於分享與保鮮，滿足中大家庭的需求。</p>
                     <div class="service-footer">
-                        <a href="https://lin.ee/UFeY5Xq" class="btn btn-secondary btn-sm" style="padding:8px 20px; font-size:0.95rem;" target="_blank" rel="noopener">立即預訂</a>
+                        <a href="https://lin.ee/UFeY5Xq" class="btn btn-secondary btn-sm" style="padding:10px 24px; font-size:0.95rem;" target="_blank" rel="noopener">線上預訂</a>
                     </div>
                 </div>
             </div>
             <!-- 服務 3 -->
             <div class="service-card">
-                <div class="service-img">
-                    <img src="work3.jpg" alt="120顆雞蛋禮盒" onerror="this.onerror=null;this.src='https://picsum.photos/seed/egg120/400/300'" loading="lazy">
-                </div>
                 <div class="service-info">
                     <span class="service-tag">多人團購最劃算</span>
                     <h3 class="service-title">120 顆雞蛋禮盒</h3>
-                    <p class="service-desc">120顆裝雞蛋，內含 12 盒 10 顆獨立小包裝。不管是親友合購還是辦公室團購，都是最經濟實惠的綠色食材選擇。</p>
+                    <p class="service-desc">120顆裝雞蛋，10 顆獨立包裝有12盒。不管是親友合購還是辦公室團購都很合適。</p>
                     <div class="service-footer">
-                        <a href="https://lin.ee/UFeY5Xq" class="btn btn-secondary btn-sm" style="padding:8px 20px; font-size:0.95rem;" target="_blank" rel="noopener">發起團購</a>
+                        <a href="https://lin.ee/UFeY5Xq" class="btn btn-secondary btn-sm" style="padding:10px 24px; font-size:0.95rem;" target="_blank" rel="noopener">發起團購</a>
                     </div>
                 </div>
             </div>
@@ -793,13 +781,13 @@
             <div class="faq-item">
                 <div class="faq-question">雞蛋買回家後需要洗嗎？</div>
                 <div class="faq-answer">
-                    <p>買回家後可以先進行表面的乾拭或簡單清潔（例如：擦除微小的碎屑），千萬不要直接用水沖洗保存喔！因為水洗會破壞蛋殼天然的保護膜，反而容易讓細菌侵入。建議等到「要料理下鍋前」再用水清洗乾淨即可。</p>
+                    <p>買回家後可以先進行表面清潔（如乾拭拭去雜質），要吃之前再洗即可！因為水洗會破壞蛋殼天然保護膜，反而容易讓細菌進入。</p>
                 </div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">什麼是平飼呢？</div>
+                <div class="faq-question">甚麼是平飼？</div>
                 <div class="faq-answer">
-                    <p>平飼（室內放養）是指場內完全沒有狹小擁擠的籠子！蛋雞們可以在寬敞的室內空間裡自由地奔跑、飛跳，並展現沙浴、築巢等自然天性。當母雞生活沒有壓迫與焦慮，產下的雞蛋不僅沒有傳統蛋的腥味，吃起來更是香濃又挺拔！</p>
+                    <p>場內沒有狹小的籠子，母雞可以自由地跑跳、展現自然習性，減少壓力。這樣的雞蛋不容易有腥味，吃起來也更香濃！</p>
                 </div>
             </div>
         </div>
@@ -815,7 +803,7 @@
             <div class="article-card">
                 <span class="service-tag" style="margin-bottom:10px;">專業探討</span>
                 <h3>宜蘭多雨潮濕，如何兼顧雞舍墊料乾燥與沙門氏菌防禦？</h3>
-                <p style="margin-bottom:15px; color:var(--text-dark);">我們透過精密的通風環境控制與定期科學更換墊料，降低多雨環境下的生物安全風險，讓母雞與雞蛋遠離病原菌...</p>
+                <p style="margin-bottom:15px; color:var(--text-dark);">考驗開產前的產蛋箱誘導訓練、分流棲架設計與通風清消頻率，從源頭降低糞便與微生物污染...</p>
                 <a href="article-litter-management.html" class="btn btn-secondary" style="padding:8px 20px; font-size:0.9rem;">閱讀全文</a>
             </div>
         </div>
@@ -825,7 +813,7 @@
     <section class="contact-section">
         <div class="contact-container">
             <h2 class="contact-title">期待與您分享這份純淨</h2>
-            <p class="contact-invite">如需合作、大量團購或有任何疑問，歡迎隨時透過以下社群或 LINE 聯繫我，我通常會在兩天內回覆您喔！</p>
+            <p class="contact-invite">如需合作歡迎來信，我通常兩天內回覆。</p>
             
             <div class="social-links">
                 <a href="https://lin.ee/UFeY5Xq" class="social-btn line-btn" title="LINE 官方帳號" target="_blank" rel="noopener">LINE</a>
@@ -835,61 +823,24 @@
 
             <footer>
                 <p>&copy; 2026 宜卵即食 (陳映朱). All Rights Reserved.</p>
-                <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.6;">宜蘭平飼蛋雞場的友善食安守護者</p>
+                <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.5;">宜蘭平飼蛋雞場的友善食安守護者</p>
             </footer>
         </div>
     </section>
 
     <script>
-        // 行動選單開啟/關閉
+        // 選單開啟與關閉
         function toggleMenu() {
-            document.getElementById('nav-menu').querySelector('ul').classList.toggle('active');
+            const menu = document.getElementById('nav-menu').querySelector('ul');
+            menu.classList.toggle('active');
         }
 
         function closeMenu() {
-            document.getElementById('nav-menu').querySelector('ul').classList.remove('active');
+            const menu = document.getElementById('nav-menu').querySelector('ul');
+            if (menu) {
+                menu.classList.remove('active');
+            }
         }
-
-        // 動態打字效果 (新鮮 ‧ 專業 ‧ 好吃)
-        const words = ["新鮮 ‧ 專業 ‧ 好吃", "友善平飼 ‧ 嚴選食安", "來自宜蘭的優質好蛋"];
-        let i = 0;
-        let timer;
-
-        function typingEffect() {
-            const word = words[i].split("");
-            const loopTyping = function() {
-                if (word.length > 0) {
-                    document.getElementById('typing-text').innerHTML += word.shift();
-                } else {
-                    setTimeout(deletingEffect, 2000);
-                    return false;
-                }
-                timer = setTimeout(loopTyping, 120);
-            };
-            loopTyping();
-        }
-
-        function deletingEffect() {
-            const word = words[i].split("");
-            const loopDeleting = function() {
-                if (word.length > 0) {
-                    word.pop();
-                    document.getElementById('typing-text').innerHTML = word.join("");
-                } else {
-                    if (words.length > (i + 1)) {
-                        i++;
-                    } else {
-                        i = 0;
-                    }
-                    setTimeout(typingEffect, 500);
-                    return false;
-                }
-                timer = setTimeout(loopDeleting, 60);
-            };
-            loopDeleting();
-        }
-
-        document.addEventListener("DOMContentLoaded", typingEffect);
 
         // 常見問題摺疊開關
         document.querySelectorAll('.faq-question').forEach(button => {
@@ -913,7 +864,40 @@
             });
         });
 
-        // 數字跑動特效
+        // 打字效果
+        const words = ["新鮮", "專業", "好吃"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 150;
+        const deletingSpeed = 100;
+        const pauseTime = 1800;
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            const typingElement = document.getElementById('typing-text');
+            if (!typingElement) return;
+
+            if (isDeleting) {
+                typingElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                setTimeout(() => { isDeleting = true; typeEffect(); }, pauseTime);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                setTimeout(typeEffect, 400);
+            } else {
+                setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+            }
+        }
+
+        // 數字跑動動畫
         const statsSection = document.getElementById('stats');
         let animated = false;
 
@@ -923,11 +907,11 @@
                 const target = parseInt(num.getAttribute('data-target'), 10);
                 let current = 0;
                 const increment = Math.ceil(target / 80);
-                const countTimer = setInterval(() => {
+                const timer = setInterval(() => {
                     current += increment;
                     if (current >= target) {
                         num.innerText = target.toLocaleString();
-                        clearInterval(countTimer);
+                        clearInterval(timer);
                     } else {
                         num.innerText = current.toLocaleString();
                     }
@@ -944,6 +928,10 @@
                 }
             }
         });
+
+        window.onload = function() {
+            typeEffect();
+        };
     </script>
 </body>
 </html>
